@@ -1,0 +1,44 @@
+<html>
+
+<head><title>MLDonkey Options</title></head>
+
+<link rel="stylesheet" type="text/css" href="options.css" />
+
+<body>
+	<fieldset id="container">
+		<legend>MLDonkey Server</legend>
+		<ul>
+			<li>
+				<label class="section">Address</label>
+				<div class="option">
+					<select id="mldprotocol">
+						<option>http</option>
+						<option>https</option>
+					</select>://<input id="mldurl" type="text"/>:<input id="mldport" type="text"/>
+				</div>
+			</li>
+			<li>
+				<div class="text">Set Username and Password only if your server needs it</div>
+			</li>
+			<li>
+				<label class="section">Username</label>
+				<div class="option">
+					<input id="mlduser" type="password" />
+				</div>
+			</li>
+			<li>
+				<label class="section">Password</label>
+				<div class="option">
+					<input id="mldpassword" type="password" />
+				</div>
+			</li>
+		</ul>
+	</fieldset>
+	<div id="buttoncontainer">
+		<div class="message"></div>
+		<button class="submit">Save</button>
+	</div>
+	<script src="options.js"></script>
+</body>
+
+</html>

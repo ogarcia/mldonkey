@@ -1,0 +1,212 @@
+body{
+	font-family:"Trebuchet MS", Verdana, arial;
+	color:#bfb69b;
+	font-size:120%;
+	text-align:center;
+}
+
+div{
+	padding:2px;
+}
+
+#container{
+	width:700px;
+	margin:0 auto;
+	border:1px solid #d1c7ac;
+	border-radius:6px;
+}
+
+#container legend{
+	text-align:left;
+	padding:0px 10px;
+}
+
+#container ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#container ul li{
+	line-height:19px;
+	margin:10px 0;
+}
+#container ul li label.section{
+	float:left;
+	width:155px;
+	margin-right:16px;
+	text-align:right;
+}
+
+#container ul li div.option{
+	float:left;
+	width:504px;
+	text-align:left;
+}
+
+#container ul li div.text{
+	font-size:90%;
+	padding-top: 50px;
+	vertical-align: bottom;
+}
+
+input,select,button{
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#ededed;
+	color:#666666;
+	font-weight:bold;
+	text-decoration:none;
+	border-radius:4px;
+	text-shadow:1px 1px 0px #ffffff;
+	border:1px solid #d1c7ac;
+	padding:3px;
+}
+
+button{
+	padding:2px 20px;
+}
+
+button:hover{
+	background-color:#dfdfdf;
+}
+
+button:active{
+	position:relative;
+	top:1px;
+}
+
+#mldprotocol{
+	width: 60px;
+}
+
+#mldurl{
+	width: 200px;
+}
+
+#mldport{
+	width: 60px;
+}
+
+#mlduser, #mldpassword{
+	width: 300px;
+}
+
+#buttoncontainer{
+	width:700px;
+	margin:0 auto;
+	padding-top:4px;
+	text-align:right;
+}
+
+#buttoncontainer div.message{
+	display:inline-block;
+	color:#ff0000;
+	font-weight:bold;
+	font-size:60%;
+	margin-right:22px;
+}
+
+button:hover{
+	background-color:#dfdfdf;
+}
+
+button:active{
+	position:relative;
+	top:1px;
+}
+
+/*
+
+input{
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d1c7ac;
+	display:inline-block;
+	color:#666666;
+	font-weight:bold;
+	padding:3px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	width: 300px;
+}
+
+button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d1c7ac;
+	display:inline-block;
+	color:#666666;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}button:hover {
+	background-color:#dfdfdf;
+}button:active {
+	position:relative;
+	top:1px;
+}
+
+select {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d1c7ac;
+	display:inline-block;
+	color:#666666;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	margin-left:12px;
+}
+
+fieldset.container{
+	display:inline-block;
+	margin:0 auto;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border:1px solid #d1c7ac
+}
+
+div.container{
+	display:inline-block;
+}
+
+div.text{
+	padding:0px 6px;
+	font-weight:bold;
+	display:inline-block;
+	vertical-align:middle;
+	text-align:left;
+}
+
+div.buttoncontainer{
+	text-align:right;
+}
+
+div.popupcontainer{
+	min-width: 410px;
+}
+
+div.message{
+	display:inline-block;
+	color:#ff0000;
+	font-weight:bold;
+	font-size:80%;
+	margin-right:22px;
+} */
