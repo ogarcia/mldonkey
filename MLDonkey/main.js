@@ -48,8 +48,8 @@ if (elink()) {
 		getconfig();
 		// If extension is not configured report it
 		if(mldfullurl==null || mldfullurl==""){
-			var msg="Please configure extension.";
-			chrome.extension.sendRequest({notify:1,status:2,task:msg}, function(response){});
+			var msg="Please configure extension";
+			chrome.extension.sendRequest({notify:1,status:3,task:msg}, function(response){});
 		}
 		else{
 			// Get the elink name
@@ -61,8 +61,15 @@ if (elink()) {
 				timeout:1000,
 				async: false,
 				success:function(result){
-					// Send ok notification
-					chrome.extension.sendRequest({notify:1,status:1,task:itemName}, function(response){});
+					// Search for the result if item alredy added
+					if (result.search("File is already in download queue") == -1 ) {
+						// Send ok notification
+						chrome.extension.sendRequest({notify:1,status:1,task:itemName,url:mldfullurl}, function(response){});
+					} else {
+						// Send already donwload notification
+						var msg = itemName + " is already in download queue"
+						chrome.extension.sendRequest({notify:1,status:2,task:msg,url:mldfullurl}, function(response){});
+					}
 				},
 				error:function(err){
 					// Send error notification
