@@ -43,9 +43,11 @@ if (elink()) {
 	// Get options from sync storage
 	getconfig();
 
-	$('a[href^=ed2k]').click(function(){
+	$('a[href^=ed2k]').click(function(e){
 		// Get options from sync storage
 		getconfig();
+		// Prevent xdg-open
+		e.preventDefault();
 		// If extension is not configured report it
 		if(mldfullurl==null || mldfullurl==""){
 			var msg="Please configure extension";
@@ -59,15 +61,15 @@ if (elink()) {
 				type:"GET",
 				url:mldfullurl+"/submit?q="+escape(this.href),
 				timeout:1000,
-				async: false,
+				async: true,
 				success:function(result){
-					// Search for the result if item alredy added
-					if (result.search("File is already in download queue") == -1 ) {
+					// Search for the result if item alredy shared or in download queue
+					if (result.search("File is already in download queue") == -1 && result.search("File is already shared in") == -1) {
 						// Send ok notification
 						chrome.extension.sendRequest({notify:1,status:1,task:itemName,url:mldfullurl}, function(response){});
 					} else {
 						// Send already donwload notification
-						var msg = itemName + " is already in download queue"
+						var msg = itemName + " is already shared or in download queue"
 						chrome.extension.sendRequest({notify:1,status:2,task:msg,url:mldfullurl}, function(response){});
 					}
 				},
