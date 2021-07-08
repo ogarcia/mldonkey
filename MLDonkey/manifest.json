@@ -25,7 +25,7 @@
 	"name": "MLDonkey",
 	"options_page": "options.html",
 	"permissions": [ "http://*/*", "https://*/*", "notifications", "storage" ],
-	"version": "0.7.1",
+	"version": "0.7.2",
 	"web_accessible_resources": [
 		"icon48.png"
 	]
